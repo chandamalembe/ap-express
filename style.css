@@ -12,16 +12,23 @@ body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  height: 100dvh;
   width: 100dvw;
-  font-size: clamp(1.45rem, 2vw + 1rem, 2.5rem);
+  min-height: 100dvh;
   background-color: blanchedalmond;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
-  overflow-y: scroll;
+}
+
+body h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(1.8rem, 2vw + 1.5rem, 3rem);
+  text-align: center;
+  margin: 10px 5px;
 }
 
 img {
@@ -30,7 +37,6 @@ img {
 }
 
 main {
-  height: min(80%, 800px);
   width: min(90%, 1000px);
   background-color: blueviolet;
   display: flex;
@@ -39,30 +45,28 @@ main {
   overflow: hidden;
 }
 
-h1 {
-  text-align: center;
-  margin: 10px 5px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 section.top {
-  /* background-color: aqua; */
-  width: 100%;
-  flex-basis: 40%;
+  min-height: 200px;
   background: url(./images/full-body.jpg);
   background-size: cover;
-  /* height: 40%;     */
 }
 
 section.bottom {
+  font-size: clamp(1.45rem, 2vw + 1rem, 2.2rem);
+  padding: 5%;
   background-color: brown;
-  flex-basis: 60%;
-  width: 100%;
-  padding: 20px;
-  /* color: #fff; */
-  /* height: 40%; */
+}
+
+section.bottom h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(1.5rem, 2vw + 1.5rem, 2.8rem);
+
+}
+
+ul {
+  list-style-type: none;
 }
 
 @media (min-width: 600px) {
@@ -71,16 +75,12 @@ section.bottom {
   }
 
   section.right {
-    background-size: cover;
     width: 100%;
     flex-basis: 50%;
-    /* height: 100%; */
   }
 
   section.left {
-    /* background-color: brown; */
     width: 100%;
     flex-basis: 50%;
-    /* height: 100%; */
   }
 }
