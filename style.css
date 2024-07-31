@@ -42,7 +42,7 @@ img {
 
 main {
   width: min(90%, 1000px);
-  background-color: blueviolet;
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -58,7 +58,6 @@ section.top {
 section.bottom {
   font-size: clamp(1.45rem, 2vw + 1rem, 2.2rem);
   padding: 2% 5%;
-  background-color: #a52a2a;
   color: var(--text-color);
 }
 
