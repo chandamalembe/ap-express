@@ -53,7 +53,7 @@ section.top {
 
 section.bottom {
   font-size: clamp(1.45rem, 2vw + 1rem, 2.2rem);
-  padding: 5%;
+  padding: 2% 5%;
   background-color: brown;
 }
 
